@@ -1,38 +1,60 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  position: relative;
+}
+
+h2 {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#employee {
+  width: 50%;
+  margin: 50px auto 100px;
+  /* border-collapse: collapse; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#employee td,
+#employee th {
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#employee td{
+  font-size: 16px;
+}
+
+#employee tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#employee tr:hover {
+  background-color: #ddd;
+}
+
+#employee th {
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2a9b71;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#employee tr button{
+  padding: 6px 13px;
+  border: none;
+  background-color:#258c66;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px 4px;
 }
